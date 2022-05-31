@@ -1,10 +1,25 @@
 class LessonsController < ApplicationController
   def index
-    @lessons = Lesson.all
-  end
+    if params[:ca].present?
+      @lessons = Lesson.where(category: params[:ca])
+    else
+      @lessons = Lesson.all
+    end
 
   def new
     @lesson = Lesson.new
+  end
+
+  def show
+    @lesson = Lesson.find(params[:id])
+    @booking = Booking.new
+
+    @markers =[@lesson].map do |lesson|
+      {
+        lat: lesson.latitude,
+        lng: lesson.longitude
+      }
+    end
   end
 
   def create
