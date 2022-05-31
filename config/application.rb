@@ -14,7 +14,7 @@ module COACHING4LIFE
       generate.test_framework :test_unit, fixture: false
     end
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.1.6
+    config.load_defaults 6.1
 
     # Configuration for the application, engines, and railties goes here.
     #
