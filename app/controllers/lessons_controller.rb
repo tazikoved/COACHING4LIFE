@@ -1,7 +1,8 @@
 class LessonsController < ApplicationController
   def index
-    if params[:ca].present?
-      @lessons = Lesson.where(category: params[:ca])
+    category = Category.find_by(name: params[:category])
+    if params[:category].present?
+      @lessons = Lesson.where(category: category)
       else
       @lessons = Lesson.all
 
