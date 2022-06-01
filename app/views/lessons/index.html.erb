@@ -1,5 +1,9 @@
 <div class="row">
   <div class="row col-8">
+  <%= form_tag(lessons_path, method: :get) do %>
+  <%= select_tag(:category, options_for_select(Category::CATEGORIES)) %>
+  <%= submit_tag("Search") %>
+  <% end %>
     <% @lessons.each do |lesson| %>
       <div class="col-4">
         <div>
