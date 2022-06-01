@@ -27,11 +27,11 @@ category2 = Category.create([ name:"Programming" ])
 category3 = Category.create([ name:"Life Coaching" ])
 
 puts "creating lessons"
-lesson1 = Lesson.create([ user_id: user1, category_id: category1, title: "English lesson", description: "English lesson for beginners", places: 10, start_date: "2023-02-04", end_date: "2023-05-04"])
-lesson2 = Lesson.create([ user_id: user2, category_id: category2, title: "Ruby lesson", description: "Ruby lesson for beginners", places: 10, start_date: "2023-02-04", end_date: "2023-05-04"])
-lesson3 = Lesson.create([ user_id: user3, category_id: category3, title: "Psycology lesson", description: "Psycology lesson for beginners", places: 10, start_date: "2023-02-04", end_date: "2023-05-04"])
-lesson4 = Lesson.create([ user_id: user1, category_id: category1, title: "English lesson", description: "English  for advance", places: 10, start_date: "2023-03-04", end_date: "2023-02-06"])
-lesson5 = Lesson.create([ user_id: user2, category_id: category2, title: "Ruby lesson", description: "Ruby lesson for advance", places: 10, start_date: "2023-03-04", end_date: "2023-02-06"])
-lesson6 = Lesson.create([ user_id: user3, category_id: category3, title: "Psycology lesson", description: "Psycology lesson for advance", places: 10, start_date: "2023-03-04", end_date: "2023-02-06"])
+lesson1 = Lesson.create!([ user_id: user1, category_id: category1, title: "English lesson", description: "English lesson for beginners", places: 10, start_date: "2023-02-04", end_date: "2023-05-04"])
+lesson2 = Lesson.create!([ user_id: user2, category_id: category2, title: "Ruby lesson", description: "Ruby lesson for beginners", places: 10, start_date: "2023-02-04", end_date: "2023-05-04"])
+lesson3 = Lesson.create!([ user_id: user3, category_id: category3, title: "Psycology lesson", description: "Psycology lesson for beginners", places: 10, start_date: "2023-02-04", end_date: "2023-05-04"])
+lesson4 = Lesson.create!([ user_id: user1, category_id: category1, title: "English lesson", description: "English  for advance", places: 10, start_date: "2023-03-04", end_date: "2023-02-06"])
+lesson5 = Lesson.create!([ user_id: user2, category_id: category2, title: "Ruby lesson", description: "Ruby lesson for advance", places: 10, start_date: "2023-03-04", end_date: "2023-02-06"])
+lesson6 = Lesson.create!([ user_id: user3, category_id: category3, title: "Psycology lesson", description: "Psycology lesson for advance", places: 10, start_date: "2023-03-04", end_date: "2023-02-06"])
 
 puts "finish seeding"
