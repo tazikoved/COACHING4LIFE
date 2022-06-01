@@ -1,0 +1,14 @@
+<div class="container">
+  <%= render "shared/topbar" %>
+  <div class="row">
+    <% @lessons.each do |lesson| %>
+      <div class="col-3">
+        <div>
+          <%= link_to lesson_path(van) do %>
+          <%= render "shared/card", lesson: lesson %>
+          <% end %>
+        </div>
+      </div>
+     <% end %>
+  </div>
+</div>
