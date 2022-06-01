@@ -5,12 +5,12 @@ class LessonsController < ApplicationController
       else
       @lessons = Lesson.all
 
-      @markers = @lessons.map do |lesson|
-        {
-          lat: lesson.latitude,
-          lng: lesson.longitude
-        }
-      end
+      #    @markers = @lessons.map do |lesson|
+      #   {
+      #     lat: lesson.latitude,
+      #     lng: lesson.longitude
+      #   }
+      # end
     end
   end
 
