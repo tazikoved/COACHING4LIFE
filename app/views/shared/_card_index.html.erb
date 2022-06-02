@@ -3,13 +3,13 @@
   <div class="d-flex align-items-center justify-content-between">
     <div class="d-flex align-items-center">
       <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png", class: "avatar-small" %>
-      <p class="my-0 mx-2"><strong>Denis Gavrilenco</strong></p>
+      <p class="my-0 mx-2"><strong><%= lesson.user.first_name %> <%= lesson.user.last_name %></strong></p>
     </div>
-    <span class="badge alert-success">2/3 places available</span>
+    <span class="badge alert-success"><%= lesson.places %>/10 places available</span>
   </div>
 
   <div class="d-flex align-items-center justify-content-between mt-2">
-    <h5 class="mt-2">Dutch lessons</h5>
-    <p class="m-0">17/08 - 19/08</p>
+    <h5 class="mt-2"><%= lesson.title %></h5>
+    <p class="m-0"><%= lesson.start_date %> / <%= lesson.end_date %></p>
   </div>
 </div>
