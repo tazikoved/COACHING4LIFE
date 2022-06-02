@@ -1,32 +1,59 @@
-Specific CSS for your home-page
-
-// .banner {
-
-//   background-size: 100% 100%;
-//   background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-//   background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FA00FFFF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(75% 75% at 50% 50%, #00FFFFFF 3%, #073AFFFF 97%);
-
-// }
-
-.banner {
+.homepage {
+  width: 100%;
+  height: 100vh;
+  // background-image: url("blob-scene-haikei.png");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  // background-attachment: local;
+}
+.background {
+  background-image: url("blob-scene-haikei.png");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .ban-body {
-  height: 95vh;
+  padding: 70px;
 }
 
-// .banner h1 {
-//   font-family: "Manrope", sans-serif;
-//   font-size: 55px;
-//   font-weight: 600;
-//   background-color: aqua;
-// }
+.ban-body h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 75px;
+  font-weight: 600;
+}
 
-// .to-indigo-500 {
-//   --tw-gradient-to: #6366f1;
-// }
+p {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 30px;
+  padding-right: 250px;
+}
+
+.my_container {
+  padding-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+u {
+  color: rgb(115, 66, 138);
+  text-decoration: none;
+}
+
+.animation img {
+  width: 100%;
+  padding-right: 50px;
+}

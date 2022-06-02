@@ -1,6 +1,10 @@
-.navbar
+.navbar {
+  background-color: transparent !important;
+  z-index: 1000;
+}
 
 .navbar-lewagon {
+  background-color: transparent !important;
   justify-content: space-between;
 }
 
@@ -20,5 +24,14 @@
 }
 
 .nav-item {
+  color: rgb(57, 83, 83);
   margin-left: 20px;
+}
+
+.nav-link {
+  color: rgb(57, 83, 83) !important;
+}
+
+.nav-item :hover {
+  color: rgb(115, 76, 128) !important;
 }
