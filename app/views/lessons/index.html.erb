@@ -1,7 +1,6 @@
 <div class="index">
 <div class="container">
-<h3>dgdfhfdhdhd</h3>
-<%= form_tag(lessons_path, method: :get, class:"bg-white p-3 m-3 align-items-center w-100 rounded shadow-sm d-flex justify-content-between") do %>
+<%= form_tag(lessons_path, method: :get, class:"row col-8 bg-white p-3 my-3 align-items-center  rounded-pill shadow-sm d-flex justify-content-between") do %>
     <div>
     <%= text_field_tag :city, "city", class:"" %>
 
@@ -9,7 +8,9 @@
     <%= submit_tag("Search") %>
     </div>
   <% end %>
+<h3>Our courses:</h3>
 <div class="row">
+<div class="container">
   <div class="row col-8">
     <% @lessons.each do |lesson| %>
       <div class="col-6">
