@@ -5,11 +5,17 @@
 
 // External libraries
 // @import "bootstrap/scss/bootstrap";
-@import "font-awesome-sprockets";
 @import "font-awesome";
+// @import "font-awesome-sprockets";
 // @import "mapbox-gl/";
 // @import "../node_modules/mapbox-gl/dist/mapbox-gl";
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "pages/home";
+
+.my_container {
+  width: 90vw !important;
+  margin: 0 auto;
+}
