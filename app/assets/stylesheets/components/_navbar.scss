@@ -1,0 +1,24 @@
+.navbar
+
+.navbar-lewagon {
+  justify-content: space-between;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-brand {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 25px !important;
+  color: rgb(24, 24, 24) !important;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
