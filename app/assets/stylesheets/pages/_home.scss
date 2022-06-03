@@ -23,19 +23,22 @@
 
 .ban-body {
   padding: 70px;
+  padding-left: 90px;
 }
 
 .ban-body h1 {
   font-family: "Manrope", sans-serif;
   font-size: 75px;
-  font-weight: 600;
+  font-weight: 700;
+  color: rgb(63, 40, 75);
 }
 
 p {
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-family: 'Manrope', sans-serif;
   padding-top: 30px;
   padding-right: 250px;
+  color: rgb(43, 38, 70);
 }
 
 .my_container {
@@ -46,14 +49,16 @@ p {
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
+  // padding-left: ;
 }
 
 u {
-  color: rgb(115, 66, 138);
+  color: rgb(167, 63, 138);
   text-decoration: none;
 }
 
 .animation img {
   width: 100%;
-  padding-right: 50px;
+  padding-right: 100px;
+  padding-top: 60px;
 }
